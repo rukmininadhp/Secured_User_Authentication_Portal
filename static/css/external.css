@@ -1,0 +1,27 @@
+body{
+    background-color: rgb(189, 0, 107);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+a{
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    font-size: 25px;
+    color: whitesmoke;
+    background: black;
+    padding: 15px 0;
+}
+.c1{
+    padding: 30px;
+    border-radius: 10px;
+    background: white;
+    width: 500px ;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.75);
+}
+h2{
+    text-align: center;
+    margin-top: 50px;
+}

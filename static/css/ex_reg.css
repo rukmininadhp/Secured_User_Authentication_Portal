@@ -1,0 +1,49 @@
+body{
+    font-family: Arial, sans-serif;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: rgb(255, 177, 255);
+}
+.container{
+    background: whitesmoke;
+    padding: 30px;
+    border-radius: 15px;
+    width: 500px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.75);
+}
+h2{
+    text-align: center;
+}
+input{
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+.checkbox{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin: 10px 0;
+}
+.checkbox input{
+    width: auto;
+    margin: 0;
+}
+button{
+    width: 100%;
+    padding: 10px;
+    margin-top: 20px;
+    color: white;
+    background: rgb(0, 115, 255);
+    border: none;
+    cursor: pointer;
+}
+a{
+    display: block;
+    text-align: right;
+    margin-top: 10px;
+    color: rgb(0, 10, 255);
+}

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Register Page</title>
+        <link rel="stylesheet" href="/static/css/ex_reg.css">
+    </head>
+    <body>
+        <div class="container">
+            <h2>Register here</h2>
+            <form action="/register" method="POST">
+
+                <input type="text" name="email_id" placeholder="Enter email">
+                <input type="password" name="password1" placeholder="Enter password">
+                <input type="password" name="password2" placeholder="Re-enter password">
+                
+                <div class="checkbox">
+                    <input type="checkbox" id="agree" required>
+                    <label for="agree">I agree to the Terms and Conditions</label>
+                </div>
+
+                <button type="submit">Submit</button>
+            </form>
+            <a href="/login">Already have an account</a>
+        </div>
+    </body>
+</html>
