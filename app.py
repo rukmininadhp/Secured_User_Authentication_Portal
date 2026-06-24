@@ -1,15 +1,16 @@
 from flask import Flask, render_template,request,redirect,session
 import mysql.connector, bcrypt, secrets
 app=Flask(__name__)
+import os
 
-conn=mysql.connector.connect(
-    host="localhost",
-    user="root",
-    password="root",
-    database="p1_ecom"
+conn = mysql.connector.connect(
+    host=os.getenv("MYSQLHOST"),
+    user=os.getenv("MYSQLUSER"),
+    password=os.getenv("MYSQLPASSWORD"),
+    database=os.getenv("MYSQLDATABASE"),
+    port=int(os.getenv("MYSQLPORT"))
 )
 cursor=conn.cursor()
-
 app.secret_key = "your-long-random-secret-key"
 
 
