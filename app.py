@@ -8,7 +8,7 @@ conn = mysql.connector.connect(
     user=os.getenv("MYSQLUSER"),
     password=os.getenv("MYSQLPASSWORD"),
     database=os.getenv("MYSQLDATABASE"),
-    port=3306
+    port=int(os.getenv("MYSQLPORT", "3306"))
 )
 cursor=conn.cursor()
 app.secret_key = "your-long-random-secret-key"
